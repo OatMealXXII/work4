@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>คุณเหมือนหมาหรือแมว</title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🐶 คุณเหมือนหมาหรือแมว? 🐱</h1>
+
+      <!-- ส่วนแสดงคำถาม -->
+      <div id="questionBox">
+        <h2 id="question">คุณชอบทำอะไรในวันหยุด?</h2>
+
+        <p id="progress">คำถามข้อ 1 / 5</p>
+
+        <div id="answers">
+          <button id="btn1" onclick="answerDog()">ออกไปเที่ยวกับเพื่อน</button>
+
+          <button id="btn2" onclick="answerCat()">อยู่บ้านพักผ่อน</button>
+        </div>
+      </div>
+
+      <!-- ส่วนแสดงผลลัพธ์ -->
+      <div id="result" class="hidden">
+        <h2 id="resultTitle"></h2>
+
+        <img id="resultImage" src="" alt="รูปผลลัพธ์" />
+
+        <p id="resultText"></p>
+
+        <button onclick="restartQuiz()">เริ่มทำแบบทดสอบใหม่</button>
+      </div>
+    </div>
+
+    <script src="../JavaScript/script.js"></script>
+  </body>
+</html>
